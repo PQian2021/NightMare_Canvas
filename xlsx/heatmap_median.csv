@@ -1,0 +1,7 @@
+color,,black,black,black,blue,blue,blue,red,red,red,white,white,white,yellow,yellow,yellow
+semantic,,devil,evil,ghosty,devil,evil,ghosty,devil,evil,ghosty,devil,evil,ghosty,devil,evil,ghosty
+size,shape,,,,,,,,,,,,,,,
+colossal,humanoid,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.5,1.0,1.0,2.0
+colossal,quadruped,1.0,2.0,3.0,3.0,2.0,1.0,1.0,3.0,3.0,1.0,2.0,1.0,1.0,2.0,1.0
+human,humanoid,1.0,1.5,1.0,3.0,3.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0,1.0,2.0
+human,quadruped,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,2.0,1.0,1.0,1.0,2.0

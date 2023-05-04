@@ -1,0 +1,28 @@
+
+
+
+A group of green monster that is tiny with a Tentacled shape,(horror 3), 3d isometric render, white background, ambient occlusion, unreal engine
+nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers,extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+
+
+Size:
+Medium (human-sized or the size of a large dog)
+Colossal (the size of a multi-story building or larger than a whale)
+
+Shape:
+Humanoid (bipedal with a human-like body structure)
+Quadruped (four-legged with an animal-like body structure)
+
+Color:
+Black
+White
+Red
+Blue
+Yellow
+
+Semantic:
+Ghosty (related to ghosts, ethereal or spectral)
+Devil (related to devils, demonic or infernal)
+Monster (generic monstrous, ferocious or frightening)
+
+原油

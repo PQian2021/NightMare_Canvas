@@ -1,0 +1,157 @@
+Investigating the Impact of Size, Shape, Color, and Semantic Associations on the Perception of Scariness in Monsters
+Introduction:
+The horror genre has long captivated audiences, drawing them into a realm of fear and intrigue. In recent times, video games have emerged as an increasingly popular medium for horror aficionados to experience the adrenaline rush associated with confronting the unknown. Central to the appeal of horror games is the presence of terrifying monsters, which often embody the fears and anxieties of players. Comprehending the factors contributing to the perception of scariness in monsters is essential for game developers seeking to create immersive and engaging horror experiences.
+
+The aim of this research is to investigate the impact of size, shape, color, and semantic associations on the perception of scariness in monstrous entities. By examining the interplay among these factors, this study endeavors to identify the most effective combinations for eliciting fear in players, thus providing valuable insights for the development of future horror games.
+
+Previous literature has explored various dimensions of horror in gaming, encompassing the roles of narrative, environmental design, and auditory cues. However, minimal attention has been dedicated to the specific characteristics of monsters that contribute to their perceived scariness. This research seeks to address this gap by scrutinizing the influence of four central factors: size, shape, color, and semantic associations.
+
+Size constitutes a critical element of monster design, as it can considerably influence a player's sense of vulnerability and helplessness. Monstrous entities may span a broad range, from diminutive human-sized creatures to colossal building-sized abominations. Shape pertains to the physical form of the monster, such as humanoid or quadruped structures, which can elicit varying degrees of fear based on their familiarity or otherworldliness.
+
+Color serves as a critical component in establishing the ambiance and atmosphere of a game, potentially influencing the player's perception of a monster's fear-inducing qualities. Prevalent color choices for horror games encompass black, white, red, blue, and yellow, each possessing distinct psychological connotations. Furthermore, semantic associations pertain to the cultural, mythological, or symbolic meanings attributed to monsters, considerably affecting their perceived fright factor. Examples of semantic keywords include spectral, diabolical, and monstrous.
+
+To examine the influence of these elements, a research instrument was developed in the form of a questionnaire, showcasing an assorted range of monsters with variations in size, shape, color, and semantic associations. Participants were instructed to evaluate the fear evoked by each monster on a scale of 0 to 10, with 0 representing the lowest level of fear and 5 characterizing the utmost sense of terror. Through the analysis of participant responses, this study aims to identify patterns and correlations that could contribute to the creation of more effective and fear-provoking monsters in the context of horror games.
+Methods:
+In order to execute the research investigation, a mixed-methods survey was utilized, incorporating both closed-ended and open-ended inquiries for data acquisition from respondents. This questionnaire was disseminated via an online platform, specifically Google Forms, to guarantee extensive accessibility and facilitate the collection of heterogeneous responses from a diverse participant pool.
+
+Participants:
+A total of 119 participants were recruited for this study through convenience sampling, primarily via social media platforms and online forums dedicated to horror games. Out of the 119 individuals recruited, 110 met the eligibility criteria and agreed to participate in the scoring of the pictures. Participants ranged in age from 18 to 55 years, with varying levels of experience in playing horror games. No compensation was provided for participation in the study; however, participants were given the opportunity to enter a drawing for a £10 Amazon voucher upon completion of the questionnaire.
+Materials:
+The research instrument comprised four sections, each designed to gather data on distinct factors: size, shape, color, and semantic associations. In total, 60 monster images were created, integrating various combinations of these factors. AI-based design tools were employed to generate the images, ensuring consistency and adherence to predetermined parameters. Each image was accompanied by a 10-point Likert scale, with respondents being requested to rate the scariness of the monster from 0 (not scary) to 10 (extremely terrifying).
+Procedure:
+Upon accessing the questionnaire, participants were initially presented with an introduction, outlining the study's objectives and offering a disclaimer concerning the potentially unsettling content of the images. Demographic information, including age, gender, and gaming experience, was subsequently collected to evaluate possible confounding factors and better comprehend participant preferences.
+Following demographic inquiries, respondents viewed the monster images in a randomized sequence to mitigate order effects. For each image, participants rated the scariness of the monster using the provided Likert scale.
+After rating all images, participants were thanked for their involvement and instructed to enter their email addresses if they wished to participate in the Amazon voucher drawing. All responses were gathered anonymously to preserve participant privacy.
+Data Analysis:
+The data procured from the questionnaire underwent analysis utilizing both descriptive and inferential statistical techniques. Descriptive statistics, encompassing mean, standard deviation, and frequency distributions, served to synthesize participants' ratings for each monster image. Inferential statistics, including correlation and multiple regression analyses, facilitated the exploration of associations between four factors (size, shape, color, and semantic associations) and the perceived scariness of the monsters.
+The analytical process employed various statistical methodologies and software tools. The pandas Python library facilitated data manipulation and analysis, enabling functions such as reading and writing data in diverse formats, reshaping data, and executing descriptive statistics. The matplotlib Python library was utilized for data visualization purposes, including the generation of bar plots and scatter plots.
+Statistical analyses were conducted using the statsmodels Python library, which offers an array of statistical modeling instruments. A linear mixed-effects model was fitted to the data via the mixedlm function, comprising fixed effects for the size, shape, color, and semantics of the monsters, as well as an interaction term encompassing all four factors. Additionally, the model incorporated a random intercept for each timestamp to accommodate correlated data.
+Pairwise Tukey HSD tests were performed on the main effects (size, shape, color, and semantic associations), aiming to ascertain significant distinctions between factor levels. This hypothesis test identifies significant disparities between the means of individual factor levels while maintaining control over the overall Type I error rate. The pairwise_tukeyhsd function from the statsmodels library was employed to execute these tests.
+In conclusion, the application of these statistical techniques and software enabled the analysis of data obtained from the survey, unveiling insights into the interrelationships among various factors and monster ratings, as well as pinpointing potential significant differences in the levels of each factor.
+Results:
+ 
+In the heatmap visualization, I examine the mean ratings for various monster combinations based on size, shape, color, and semantic attributes. The heatmap is structured as a 4x15 matrix, with rows delineating size and shape amalgamations, while columns differentiate color and semantic amalgamations. The chromatic intensity within each cell is indicative of the mean rating, with darker hues signifying elevated ratings and lighter hues signifying diminished ratings.
+Upon analyzing the heatmap, it becomes apparent that the mean ratings are predominantly higher for monsters characterized by a colossal size and quadruped shape, particularly when accompanied by black or red colors and a "ghosty" semantic attribute (mean rating = 3.35 and 3.12 respectively). Conversely, monsters of human size and humanoid shape, featuring white and yellow colors, and possessing "devil" or "evil" semantics, exhibit lower ratings (mean rating = 1.23, 1.46, 1.66, and 1.8).
+
+Monsters with human size and humanoid shape in blue color, irrespective of their semantic attribute, display moderately high ratings (mean rating between 2.01 and 3.47). Intriguingly, the mean ratings for human-sized quadruped monsters appear relatively consistent across diverse color and semantic combinations, with values ranging from 1.29 to 2.45.
+These observations suggest that participants exhibit a preference for colossal quadruped monsters, especially when they possess a black or red color and a "ghosty" semantic attribute. In contrast, human-sized humanoid monsters with white and yellow colors and "devil" or "evil" semantics are rated less favorably. However, to obtain a comprehensive understanding of the significance of these factors and their interactions, it is crucial to consider the results of the mixed-effects model.
+
+The mixed linear model regression:
+
+[Picture is too big, I will put it use latex to show it later]
+
+The results from the mixed linear model regression analysis provide estimates for both fixed effects and random effects, accompanied by their corresponding standard errors, z-scores, p-values, and confidence intervals. Several statistically significant effects are evident based on the p-value (p<0.05).
+
+The following key insights can be gleaned from the findings:
+Primary Effects:
+Human size demonstrates a statistically significant negative impact on rating (coefficient = -1.127, p < 0.001).
+Quadruped shape exhibits a statistically significant negative influence on rating (coefficient = -0.855, p < 0.001).
+Yellow color shows a statistically significant negative effect on rating (coefficient = -1.018, p < 0.001).
+Ghosty semantic presents a statistically significant negative association with rating (coefficient = -0.491, p = 0.011).
+White color reveals a marginally significant positive influence on rating (coefficient = 0.355, p = 0.066).
+
+Interaction Effects:
+Several significant interaction effects between factors were observed, with some of the most salient being:
+Human size and quadruped shape (coefficient = 0.955, p < 0.001).
+Human size and blue color (coefficient = 2.127, p < 0.001).
+Human size and red color (coefficient = 1.536, p < 0.001).
+Quadruped shape and yellow color (coefficient = 1.155, p < 0.001).
+Quadruped shape and ghosty semantic (coefficient = 2.018, p < 0.001).
+
+The normality p-value is found to be in close proximity to zero, thereby suggesting that the normality assumption may indeed be violated. This observation may imply that the model's residuals are not normally distributed, which in turn could render the significance tests for fixed effects as unreliable.
+
+Size:
+ ( will be made into a histogram)
+The size of the monster was found to have a considerable impact on participants' fear perceptions. Colossal monsters were rated as significantly more terrifying than human-sized monsters (mean difference = -0.3739; p < 0.001), indicating that larger monsters evoke heightened fear responses in players.
+
+Shape:
+ ( will be made into a histogram)
+The shape of the monster also emerged as an influential factor on terror ratings. Humanoid-shaped monsters received higher fear ratings compared to quadruped-shaped monsters (mean difference = -0.1891; p = 0.0007), suggesting that humanoid appearances are perceived as more frightening.
+
+Color:
+ ( will be made into a histogram)
+Color was identified as a crucial element in determining the level of terror experienced by players. Participants rated blue monsters as more terrifying than black monsters (mean difference = 0.3515; p = 0.0007), implying that the blue color elicits stronger fear responses. Red monsters also garnered higher fear ratings compared to black monsters (mean difference = 0.2773; p = 0.0147), indicating that red coloration is perceived as scarier than black.
+
+White monsters, in contrast, were rated as less terrifying than both blue (mean difference = -0.4614; p < 0.001) and red monsters (mean difference = -0.3871; p = 0.0001), signifying that white is perceived as less fear-evoking. Similarly, yellow monsters were rated as less frightening compared to both blue (mean difference = -0.4106; p < 0.001) and red monsters (mean difference = -0.3364; p = 0.0013), reinforcing the notion that yellow is regarded as a less fear-inducing color.
+
+Semantics:
+ ( will be made into a histogram)
+Semantic factors appeared to have a weaker influence on participants' terror ratings. No significant differences were detected between devil and evil, or devil and ghosty semantic categories, suggesting that these categories did not substantially affect players' fear levels. Although the difference between evil and ghosty semantics was not statistically significant (mean difference = -0.1359; p = 0.117), the finding approached significance, hinting at a potential trend where evil semantics might be perceived as more terrifying than ghosty semantics.
+Conclusion:
+This study aimed to investigate the influence of size, shape, color, and semantic associations on the perception of fear elicited by monstrous entities, providing valuable insights for game developers seeking to create immersive and engaging horror experiences. By analyzing participants' responses to a diverse range of monsters, several key findings emerged, illuminating the interplay between these factors and their role in inducing fear in players.
+The results demonstrated that the size of the monster significantly affected the intensity of terror experienced by players, with larger, colossal monsters perceived as more frightening than human-sized counterparts. This finding underscores the importance of incorporating more massive monsters into horror games to heighten players' sense of vulnerability and helplessness.
+Regarding the shape of the monster, it was found that humanoid-shaped creatures were rated as more terrifying compared to quadruped-shaped monsters. This suggests that a more familiar or human-like appearance can elicit stronger fear responses in players, potentially due to the unsettling nature of perceiving an entity as both human and monstrous concurrently.
+Additionally, the color of the monster emerged as a crucial factor in determining players' perceptions of fear. Blue and red monsters were deemed scarier than black, white, and yellow monsters. This observation emphasizes the importance of employing colors with psychological connotations of danger or fear, such as blue and red, to craft more fear-inducing monster designs.
+Semantic associations appeared to have a less pronounced impact on terror ratings. Nevertheless, a possible trend was observed wherein evil semantics might be perceived as more terrifying than ghostly semantics, though further research is required to corroborate this observation.
+
+It is important to note that during the image generation process, keywords such as "dimly lit" were employed to control the variables, ensuring that participants focused on the monster itself. As a result, the overall fear ratings were generally not high, which in turn, violated the normal distribution assumption in the mixed linear model. This warrants cautious interpretation of the results and highlights the need for future research to refine the image generation process and possibly include additional control variables or different experimental settings. Furthermore, the study's sample was comprised of a relatively restricted number of participants, which may impact the generalizability of the results. 
+In summation, despite the identified limitations in the image generation process and the potential infringement of the normal distribution assumption, this investigation provides significant insight into the perception of fear elicited by monstrous entities through the examination of size, morphology, chromatic attributes, and semantic associations. These discoveries furnish game designers with a more thorough comprehension of how to construct more effectual and fear-inducing monsters for horror games, ultimately enhancing players' immersion and engagement within these suspenseful experiences.
+Nightmare Canvas
+Overview:
+Nightmare Canvas is a VR horror game designed to provide players with an immersive and terrifying experience by incorporating research findings on fear-inducing elements in horror games. Using Unreal Engine 5, the game features highly realistic and detailed environments, enhanced by heart rate monitoring for an additional layer of immersion. Players must navigate through a series of rooms, solving puzzles, and facing monstrous creatures while trying to manage their fear and ultimately defeat the final monster.
+Game Mechanics:
+Card Collection: Throughout Nightmare Canvas, players must find and collect paintings hidden in various rooms. These paintings depict monsters that must be burned in a special device located in the central hall. Burning the paintings will weaken the final monster, making it easier for the player to defeat it in the end.
+
+Heart Rate Detection: As an added layer of immersion, players wear a heart rate belt throughout the game. The game's UI displays the player's heart rate, allowing them to track their fear levels in real-time. This information can be used to adjust the game's difficulty and pacing, ensuring that the experience remains terrifying yet enjoyable for the player. The heart rate data collected during gameplay may also contribute to further research on fear-inducing elements in horror games.
+
+Sudoku Puzzle: In the second room, players will encounter a unique Sudoku puzzle that requires them to place golf balls into a basket based on the puzzle's constraints. Successfully solving the puzzle will reward the player with a painting and additional information about the game's mechanics.
+
+Monster Combat: In the third and final room, players must face the weakened monster, utilizing a gun to defeat it. The battle tests the player's ability to manage their fear and maintain focus under pressure. Victory over the monster leads to the game's conclusion and a message thanking the player for their participation in the research study.
+
+Game Base Rules:
+
+Exploration: Players must navigate through various rooms, discovering hidden objects and solving puzzles to progress through the game. Each room contains different challenges, and the player must pay close attention to their surroundings to find essential items such as keys, paintings, and weapons.
+
+Limited Resources: Players have access to a flashlight with limited battery life, which they can switch on and off with a trigger. They must use the flashlight strategically to conserve battery life while still being able to navigate the dimly lit environment.
+
+Heart Rate Management: Players should monitor their heart rate and adjust their gameplay accordingly. High heart rates may indicate heightened fear levels, which could impact the player's decision-making and reaction times. Players may need to take a moment to calm down and lower their heart rate before facing more challenging situations.
+
+Painting Collection and Destruction: To weaken the final monster, players must collect paintings and burn them in the device located in the central hall. Each painting represents a specific monster, and the more paintings a player burns, the weaker the final monster becomes.
+
+Puzzle Solving: Players must complete various puzzles throughout the game to unlock new areas, find hidden paintings, and gather crucial information. These puzzles require the player to think critically and use their problem-solving skills to progress through the game.
+
+Monster Encounters: Players will face different monsters throughout the game, culminating in a final battle against the weakened monster in the third room. Players must learn to manage their fear and utilize the weapons provided to survive these encounters.
+
+Time Management: Although there is no strict time limit, players should aim to complete the game as efficiently as possible. Spending too much time in a single area or repeatedly failing at a puzzle may increase the player's fear levels, making the game more challenging.
+
+Completion and Feedback: Upon defeating the final monster and completing the game, players are encouraged to provide feedback about their experience. This information can be used to refine the game design and further research on fear-inducing elements in horror games.
+
+Design of Game Elements:
+
+Environment: The game environments are designed to evoke fear and tension in the player. Each room features dim lighting, eerie soundscapes, and unsettling visual elements, such as bloodstains or broken furniture. The use of Unreal Engine 5 ensures highly detailed and realistic environments for an immersive experience.
+
+Monsters: The design of the monsters is based on research findings about fear-inducing attributes. The game features larger, humanoid-shaped creatures with fear-evoking colors like blue and red. These monsters are placed strategically throughout the game to maximize their impact on the player's fear levels.
+
+Flashlight: The flashlight serves as a crucial tool for navigating the dark rooms and hallways. Its limited battery life adds tension and requires the player to use it strategically. The flashlight's dynamic lighting also enhances the game's atmosphere, casting shadows that can either reveal or conceal lurking dangers.
+
+Puzzles: Puzzles in Nightmare Canvas are designed to challenge the player's problem-solving skills while also providing opportunities for exploration and discovery. Each puzzle is unique and requires a different approach, keeping the player engaged and interested throughout the game.
+
+Paintings: The paintings hidden throughout the game are designed to be both visually striking and narratively significant. They serve as both collectibles and keys to weakening the final monster, adding depth to the game's mechanics and story.
+
+Design of Interface:
+
+Heads-Up Display (HUD): The HUD is designed to be minimalistic and non-intrusive, displaying only essential information such as the player's current heart rate and the flashlight's battery life. This minimal design ensures that players can focus on the immersive game environment without being distracted by excessive on-screen elements.
+
+Heart Rate Monitoring: The heart rate monitor is seamlessly integrated into the HUD, providing real-time heart rate data for the player. The monitor uses a simple and clear visual representation, such as a numeric value, to effectively convey the player's current heart rate and fear levels.
+
+Game Outline:
+
+Players wear a heart rate belt throughout the game to monitor their heart rate, adding an extra level of immersion and fear-inducing elements.
+
+The game consists of three rooms:
+
+Starting room: A dimly lit room where the player starts the game. A flashlight on the table can be switched on and off with a trigger. When the player approaches the coffin in the room, a jump scare occurs, and the door of the room is knocked. A key is found in the cabinet, which opens a large and heavy door. A painting is hidden under the table in the room.
+
+Hall: Three walls with doors leading to different rooms. Each wall has a painting of a monster. The last side has no walls and is similar to a balcony where a huge monster's foot can be seen shaking slightly. In the middle of the hall, there is a device to burn paintings.
+
+Third room: Contains a final painting and a gun. After obtaining the last painting, the player can burn it and use the gun to defeat the monster.
+
+The second room contains a Sudoku puzzle where players must put corresponding golf balls into a basket to complete the puzzle. Upon completing the puzzle, the player receives a painting and learns that burning it will shrink the monster on the balcony.
+
+The game ends with the defeat of the monster, and the scene lights up. A brief message thanks the player for their participation and informs them that their reactions helped validate research findings on fear-inducing elements in horror games.
+
+Game Controls:
+Left joystick: controls player movement, including forward, backward, left, and right.
+Right joystick: controls the direction in which the player's head is facing, allowing the player to look around the environment.
+X key: used to jump in the game.
+Y key: opens the in-game menu, allowing the player to access game settings or pause the game.

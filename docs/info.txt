@@ -1,0 +1,17 @@
+Poster advice
+Generally, there isn’t a one-size fits all for how to create a poster that fits every project. Posters for different topics – even within Computer Science – can vary wildly. If in doubt, you can ask your supervisor for advice regarding your poster. Regardless, a good poster should allow you to present your work to someone from start to finish covering all the important aspects. This means that you may have a section of your poster for introduction, a section for a method/proof etc., and a section for any results.
+Once you’ve designed a poster, a good test is to imagine how you’d present it to someone in person. You want to make sure you’re using your poster as a visual aid, and that the order of information points you towards your next few sentences to say. You don’t want to jump back and forth across a poster as it will confuse both your audience and you whilst explaining!
+If you want to find example posters from members of the department, you can see the link to them here. Otherwise, here’s some external links of well-known poster blogs/websites for some advice:
+
+Better Posters:  http://betterposters.blogspot.com/ - Zen Faulkes’ website about all things posters, including his gallery of notable posters.  You can send your own posters to Zen to critique! 
+
+Colin Purrington’s advice:  https://colinpurrington.com/tips/poster-design/ and his Conference poster full of tips on making conference posters: https://colinpurrington.com/2017/03/conference-poster-full-tips-creating-conference-posters/
+
+
+Poster templates
+We’ve provided a standard Bristol template for use in both powerpoint (recommended for posters) and LaTeX. If you want to create your own style from scratch, go ahead as it will make your poster stand out and potentially be more memorable!
+
+BA Poster latex template:  http://www.brian-amberg.de/uni/poster/baposter/
+Colin Purrington Powerpoint templates – various options: https://colinpurrington.com/2019/06/templates-for-better-posters/
+And his portrait templates:
+https://colinpurrington.com/2013/03/templates-for-portrait-style-science-posters/ 
